@@ -23,5 +23,9 @@ class Account{
 }
 
 function main() {
-
+var Balance = new Account("Billy",100);
+    Balance.deposit(20);
+    console.log(Balance.balance())
 }
+
+main();

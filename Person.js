@@ -22,7 +22,19 @@ class Person {
 }
 
 function main() {
+var JohnWick= new Person("JohnWick",31,195,6) ;
+var Gibby = new Person("Gibby",19,200,5);
 
+alert(JohnWick.bodyMassIndex());
+alert(Gibby.bodyMassIndex());
+
+
+var Array = [JohnWick,Gibby];
+Array.push(Person);
+console.log(Array);
+
+Array[0].printPerson();
+Array[1].printPerson()
 }
 
 main();
